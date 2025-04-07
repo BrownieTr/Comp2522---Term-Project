@@ -1,6 +1,8 @@
 package ca.bcit.comp2522.termProject;
 
-import ca.bcit.comp2522.termProject.wordGame.WordGame;
+import ca.bcit.comp2522.termProject.MyGame.MyGame;
+import ca.bcit.comp2522.termProject.NumberGame.NumberGame;
+import ca.bcit.comp2522.termProject.WordGame.WordGame;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -32,7 +34,7 @@ public class Main
                     break;
                 case "n":
                 case "N":
-//                    NumberGame game2 = new NumberGame();
+                    NumberGame game2 = new NumberGame();
 //                    game2.run();
                     break;
                 case "m":

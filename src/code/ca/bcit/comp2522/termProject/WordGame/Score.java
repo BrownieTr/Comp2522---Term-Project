@@ -1,4 +1,4 @@
-package ca.bcit.comp2522.termProject.wordGame;
+package ca.bcit.comp2522.termProject.WordGame;
 
 import java.io.File;
 import java.io.FileReader;

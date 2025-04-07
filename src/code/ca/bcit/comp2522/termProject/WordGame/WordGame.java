@@ -1,4 +1,4 @@
-package ca.bcit.comp2522.termProject.wordGame;
+package ca.bcit.comp2522.termProject.WordGame;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -81,7 +81,7 @@ public class WordGame
             for(char c = 'a'; c <= 'z'; c++)
             {
                 // Define the path for the current letter's file (e.g., a.txt, b.txt, etc.)
-                final Path dataPath = Paths.get("src", "res", c + ".txt");
+                final Path dataPath = Paths.get("src", "res", "WordGame",  c + ".txt");
 
                 // Temporary arrays to hold the country name, capital, and facts
                 final String[] countryName = {""};
