@@ -1,1 +1,0 @@
-// Rat.java placeholder content

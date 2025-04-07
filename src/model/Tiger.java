@@ -1,1 +1,0 @@
-// Tiger.java placeholder content

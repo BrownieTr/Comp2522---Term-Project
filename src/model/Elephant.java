@@ -1,1 +1,0 @@
-// Elephant.java placeholder content

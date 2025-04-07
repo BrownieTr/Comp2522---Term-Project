@@ -1,1 +1,0 @@
-// Wolf.java placeholder content

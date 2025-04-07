@@ -1,1 +1,0 @@
-// Cat.java placeholder content

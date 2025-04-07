@@ -1,1 +1,0 @@
-// Animal.java placeholder content
