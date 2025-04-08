@@ -1,15 +1,15 @@
-package ca.bcit.comp2522.termProject.WordGame;
+package ca.bcit.comp2522.termProject.wordgame;
 
 import java.util.Arrays;
 
 /**
  * Represents a country with its name, capital city, and trivia facts.
  * Used to generate geography-based quiz questions.
- *
+ * <p>
  * Each Country object is immutable once created.
  *
- * Author: [Your Name]
- * Date: [Optional Date]
+ * @author Brownie Tran
+ *  @version 1.0
  */
 public class Country
 {
@@ -29,7 +29,7 @@ public class Country
     {
         validateString(countryName);
         validateString(capitalCityName);
-        for (String fact : facts)
+        for (final String fact : facts)
         {
             validateString(fact);
         }
@@ -45,7 +45,7 @@ public class Country
      * @param str the string to validate
      * @throws IllegalArgumentException if the string is null or empty
      */
-    private void validateString(final String str)
+    private final void validateString(final String str)
     {
         if (str == null || str.isEmpty())
         {
@@ -58,7 +58,7 @@ public class Country
      *
      * @return the country's name
      */
-    protected String getCountry()
+    protected final String getCountry()
     {
         return countryName;
     }
@@ -68,7 +68,7 @@ public class Country
      *
      * @return the capital city's name
      */
-    protected String getCapital()
+    protected final String getCapital()
     {
         return capitalCityName;
     }
@@ -78,7 +78,7 @@ public class Country
      *
      * @return an array of fact strings
      */
-    protected String[] getFacts()
+    protected final String[] getFacts()
     {
         return facts;
     }
@@ -89,12 +89,14 @@ public class Country
      * @return formatted string including country, capital, and facts
      */
     @Override
-    public String toString()
+    public final String toString()
     {
-        String result = "";
-        result += "Country: " + countryName + "\n";
-        result += "Capital: " + capitalCityName + "\n";
-        result += "Facts: " + Arrays.toString(facts) + "\n";
-        return result;
+        StringBuilder sb;
+
+        sb = new StringBuilder();
+        sb.append("Country: ").append(countryName).append("\n");
+        sb.append("Capital: ").append(capitalCityName).append("\n");
+        sb.append("Facts: ").append(Arrays.toString(facts)).append("\n");
+        return sb.toString();
     }
 }

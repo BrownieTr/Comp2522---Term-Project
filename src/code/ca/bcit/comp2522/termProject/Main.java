@@ -1,8 +1,8 @@
 package ca.bcit.comp2522.termProject;
 
-import ca.bcit.comp2522.termProject.MyGame.MyGame;
-import ca.bcit.comp2522.termProject.NumberGame.NumberGame;
-import ca.bcit.comp2522.termProject.WordGame.WordGame;
+//import ca.bcit.comp2522.termProject.mygame.MyGame;
+import ca.bcit.comp2522.termProject.numbergame.MainMenu;
+import ca.bcit.comp2522.termProject.wordgame.WordGame;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -12,10 +12,10 @@ public class Main
     public static void main(final String[] args) throws IOException
     {
         Main main = new Main();
-        main.menu();
+        main.menu(args);
     }
 
-    private void menu() throws IOException
+    private void menu(final String[] args) throws IOException
     {
         String choice = "";
         boolean run = true;
@@ -34,12 +34,12 @@ public class Main
                     break;
                 case "n":
                 case "N":
-                    NumberGame game2 = new NumberGame();
-//                    game2.run();
+                    // Start the game
+                    MainMenu.main(args);
                     break;
                 case "m":
                 case "M":
-                    MyGame game3 = new MyGame();
+//                    MyGame game3 = new MyGame();
 //                    game3.run();
                     break;
                 case "q":
@@ -53,4 +53,5 @@ public class Main
             }
         } while (run);
     }
+
 }
